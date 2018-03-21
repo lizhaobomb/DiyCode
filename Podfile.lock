@@ -1,0 +1,51 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
+  - CTMediator (13)
+  - CTNetworking (7):
+    - AFNetworking
+    - CTMediator
+  - HandyFrame (1.2.0)
+  - MJRefresh (3.1.15.3)
+  - SDWebImage (4.3.2):
+    - SDWebImage/Core (= 4.3.2)
+  - SDWebImage/Core (4.3.2)
+  - TYPagerController (2.1.2)
+
+DEPENDENCIES:
+  - ChameleonFramework
+  - CTNetworking
+  - HandyFrame
+  - MJRefresh
+  - SDWebImage
+  - TYPagerController
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  CTMediator: 4cbf8ede42efc6b31715be88b78bdc9d94efa840
+  CTNetworking: 882457d4a31259a87c4335d5cf7c2b4338393075
+  HandyFrame: 437df83ba7563c56cd55b9bd0128561995463110
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
+  TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
+
+PODFILE CHECKSUM: 47552a5ea7bb137254b5333cd86601df8268d5fa
+
+COCOAPODS: 1.4.0

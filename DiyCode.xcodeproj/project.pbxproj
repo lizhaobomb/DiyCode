@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6808A60B44E774596A743D84 /* libPods-DiyCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E32E4DC17A3159A43CEA1B /* libPods-DiyCode.a */; };
+		F11C5ACC205B54BB0099A490 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F11C5ACB205B54BB0099A490 /* AppDelegate.m */; };
+		F11C5ACF205B54BB0099A490 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F11C5ACE205B54BB0099A490 /* ViewController.m */; };
+		F11C5AD2205B54BB0099A490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11C5AD0205B54BB0099A490 /* Main.storyboard */; };
+		F11C5AD4205B54BB0099A490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11C5AD3205B54BB0099A490 /* Assets.xcassets */; };
+		F11C5AD7205B54BB0099A490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11C5AD5205B54BB0099A490 /* LaunchScreen.storyboard */; };
+		F11C5ADA205B54BB0099A490 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F11C5AD9205B54BB0099A490 /* main.m */; };
+		F141C1B0206262E7007FFB71 /* SLSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1AE206262E7007FFB71 /* SLSlideMenu.m */; };
+		F141C1B1206262E7007FFB71 /* SLScreenEdgePanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1AF206262E7007FFB71 /* SLScreenEdgePanGestureRecognizer.m */; };
+		F141C2002062650D007FFB71 /* DiyCodeHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1B72062650D007FFB71 /* DiyCodeHomeViewController.m */; };
+		F141C2012062650D007FFB71 /* DiyCodeSitesApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1BD2062650D007FFB71 /* DiyCodeSitesApiManager.m */; };
+		F141C2022062650D007FFB71 /* DiyCodeSitesCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1C12062650D007FFB71 /* DiyCodeSitesCollectionHeaderView.m */; };
+		F141C2032062650D007FFB71 /* DiyCodeSitesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1C22062650D007FFB71 /* DiyCodeSitesCollectionViewCell.m */; };
+		F141C2042062650D007FFB71 /* DiyCodeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1C52062650D007FFB71 /* DiyCodeWebViewController.m */; };
+		F141C2052062650D007FFB71 /* DiyCodeSitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1C82062650D007FFB71 /* DiyCodeSitesViewController.m */; };
+		F141C2062062650D007FFB71 /* DiyCodeNewsApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1CC2062650D007FFB71 /* DiyCodeNewsApiManager.m */; };
+		F141C2072062650D007FFB71 /* DiyCodeNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1CF2062650D007FFB71 /* DiyCodeNewsViewController.m */; };
+		F141C2082062650D007FFB71 /* Target_DiyCodeService.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1D22062650D007FFB71 /* Target_DiyCodeService.m */; };
+		F141C2092062650D007FFB71 /* Target_CTAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1D42062650D007FFB71 /* Target_CTAppContext.m */; };
+		F141C20A2062650D007FFB71 /* DiyCodeService.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1D62062650D007FFB71 /* DiyCodeService.m */; };
+		F141C20B2062650D007FFB71 /* showdown.js in Resources */ = {isa = PBXBuildFile; fileRef = F141C1DA2062650D007FFB71 /* showdown.js */; };
+		F141C20C2062650D007FFB71 /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = F141C1DB2062650D007FFB71 /* markdown.css */; };
+		F141C20D2062650D007FFB71 /* DiyCodeOauthApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1DF2062650D007FFB71 /* DiyCodeOauthApiManager.m */; };
+		F141C20E2062650D007FFB71 /* DiyCodeOauthService.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1E12062650D007FFB71 /* DiyCodeOauthService.m */; };
+		F141C20F2062650D007FFB71 /* Target_DiyCodeOauthService.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1E22062650D007FFB71 /* Target_DiyCodeOauthService.m */; };
+		F141C2102062650D007FFB71 /* DiyCodeLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1E72062650D007FFB71 /* DiyCodeLoginViewController.m */; };
+		F141C2112062650D007FFB71 /* DiyCodeTopicsApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1EA2062650D007FFB71 /* DiyCodeTopicsApiManager.m */; };
+		F141C2122062650D007FFB71 /* DiyCodeTopicDetialApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1EB2062650D007FFB71 /* DiyCodeTopicDetialApiManager.m */; };
+		F141C2132062650D007FFB71 /* DiyCodeTopicReplyApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1EE2062650D007FFB71 /* DiyCodeTopicReplyApiManager.m */; };
+		F141C2142062650D007FFB71 /* DiyCodeTopicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1F12062650D007FFB71 /* DiyCodeTopicDetailViewController.m */; };
+		F141C2152062650D007FFB71 /* DiyCodeTopicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1F22062650D007FFB71 /* DiyCodeTopicsViewController.m */; };
+		F141C2162062650D007FFB71 /* DiyCodeTopicReplyCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1F92062650D007FFB71 /* DiyCodeTopicReplyCellTableViewCell.m */; };
+		F141C2172062650D007FFB71 /* DiyCodeTopicTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1FB2062650D007FFB71 /* DiyCodeTopicTitleCell.m */; };
+		F141C2182062650D007FFB71 /* DiyCodeTopicDetailWebCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1FC2062650D007FFB71 /* DiyCodeTopicDetailWebCell.m */; };
+		F141C2192062650D007FFB71 /* DiyCodeTopicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1FD2062650D007FFB71 /* DiyCodeTopicsCell.m */; };
+		F141C21A2062650D007FFB71 /* DiyCodeTopicsCellTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1FE2062650D007FFB71 /* DiyCodeTopicsCellTopView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18E32E4DC17A3159A43CEA1B /* libPods-DiyCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiyCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F0756B55562B7665527D94 /* Pods-DiyCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiyCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiyCode/Pods-DiyCode.debug.xcconfig"; sourceTree = "<group>"; };
+		87290C8E3B900A597841B299 /* Pods-DiyCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiyCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiyCode/Pods-DiyCode.release.xcconfig"; sourceTree = "<group>"; };
+		F11C5AC7205B54BB0099A490 /* DiyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11C5ACA205B54BB0099A490 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F11C5ACB205B54BB0099A490 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F11C5ACD205B54BB0099A490 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F11C5ACE205B54BB0099A490 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F11C5AD1205B54BB0099A490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F11C5AD3205B54BB0099A490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F11C5AD6205B54BB0099A490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F11C5AD8205B54BB0099A490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F11C5AD9205B54BB0099A490 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F141C1AC206262E7007FFB71 /* SLSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLSlideMenu.h; sourceTree = "<group>"; };
+		F141C1AD206262E7007FFB71 /* SLScreenEdgePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLScreenEdgePanGestureRecognizer.h; sourceTree = "<group>"; };
+		F141C1AE206262E7007FFB71 /* SLSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLSlideMenu.m; sourceTree = "<group>"; };
+		F141C1AF206262E7007FFB71 /* SLScreenEdgePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLScreenEdgePanGestureRecognizer.m; sourceTree = "<group>"; };
+		F141C1B62062650D007FFB71 /* DiyCodeHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeHomeViewController.h; sourceTree = "<group>"; };
+		F141C1B72062650D007FFB71 /* DiyCodeHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeHomeViewController.m; sourceTree = "<group>"; };
+		F141C1BA2062650D007FFB71 /* DiyCodeDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeDefines.h; sourceTree = "<group>"; };
+		F141C1BD2062650D007FFB71 /* DiyCodeSitesApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeSitesApiManager.m; sourceTree = "<group>"; };
+		F141C1BE2062650D007FFB71 /* DiyCodeSitesApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeSitesApiManager.h; sourceTree = "<group>"; };
+		F141C1C02062650D007FFB71 /* DiyCodeSitesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeSitesCollectionViewCell.h; sourceTree = "<group>"; };
+		F141C1C12062650D007FFB71 /* DiyCodeSitesCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeSitesCollectionHeaderView.m; sourceTree = "<group>"; };
+		F141C1C22062650D007FFB71 /* DiyCodeSitesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeSitesCollectionViewCell.m; sourceTree = "<group>"; };
+		F141C1C32062650D007FFB71 /* DiyCodeSitesCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeSitesCollectionHeaderView.h; sourceTree = "<group>"; };
+		F141C1C52062650D007FFB71 /* DiyCodeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeWebViewController.m; sourceTree = "<group>"; };
+		F141C1C62062650D007FFB71 /* DiyCodeSitesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeSitesViewController.h; sourceTree = "<group>"; };
+		F141C1C72062650D007FFB71 /* DiyCodeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeWebViewController.h; sourceTree = "<group>"; };
+		F141C1C82062650D007FFB71 /* DiyCodeSitesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeSitesViewController.m; sourceTree = "<group>"; };
+		F141C1CB2062650D007FFB71 /* DiyCodeNewsApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeNewsApiManager.h; sourceTree = "<group>"; };
+		F141C1CC2062650D007FFB71 /* DiyCodeNewsApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeNewsApiManager.m; sourceTree = "<group>"; };
+		F141C1CE2062650D007FFB71 /* DiyCodeNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeNewsViewController.h; sourceTree = "<group>"; };
+		F141C1CF2062650D007FFB71 /* DiyCodeNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeNewsViewController.m; sourceTree = "<group>"; };
+		F141C1D12062650D007FFB71 /* DiyCodeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeService.h; sourceTree = "<group>"; };
+		F141C1D22062650D007FFB71 /* Target_DiyCodeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_DiyCodeService.m; sourceTree = "<group>"; };
+		F141C1D42062650D007FFB71 /* Target_CTAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_CTAppContext.m; sourceTree = "<group>"; };
+		F141C1D52062650D007FFB71 /* Target_CTAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_CTAppContext.h; sourceTree = "<group>"; };
+		F141C1D62062650D007FFB71 /* DiyCodeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeService.m; sourceTree = "<group>"; };
+		F141C1D72062650D007FFB71 /* Target_DiyCodeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_DiyCodeService.h; sourceTree = "<group>"; };
+		F141C1DA2062650D007FFB71 /* showdown.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = showdown.js; sourceTree = "<group>"; };
+		F141C1DB2062650D007FFB71 /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
+		F141C1DE2062650D007FFB71 /* DiyCodeOauthApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeOauthApiManager.h; sourceTree = "<group>"; };
+		F141C1DF2062650D007FFB71 /* DiyCodeOauthApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeOauthApiManager.m; sourceTree = "<group>"; };
+		F141C1E12062650D007FFB71 /* DiyCodeOauthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeOauthService.m; sourceTree = "<group>"; };
+		F141C1E22062650D007FFB71 /* Target_DiyCodeOauthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_DiyCodeOauthService.m; sourceTree = "<group>"; };
+		F141C1E32062650D007FFB71 /* DiyCodeOauthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeOauthService.h; sourceTree = "<group>"; };
+		F141C1E42062650D007FFB71 /* Target_DiyCodeOauthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_DiyCodeOauthService.h; sourceTree = "<group>"; };
+		F141C1E62062650D007FFB71 /* DiyCodeLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeLoginViewController.h; sourceTree = "<group>"; };
+		F141C1E72062650D007FFB71 /* DiyCodeLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeLoginViewController.m; sourceTree = "<group>"; };
+		F141C1EA2062650D007FFB71 /* DiyCodeTopicsApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicsApiManager.m; sourceTree = "<group>"; };
+		F141C1EB2062650D007FFB71 /* DiyCodeTopicDetialApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicDetialApiManager.m; sourceTree = "<group>"; };
+		F141C1EC2062650D007FFB71 /* DiyCodeTopicReplyApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicReplyApiManager.h; sourceTree = "<group>"; };
+		F141C1ED2062650D007FFB71 /* DiyCodeTopicsApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicsApiManager.h; sourceTree = "<group>"; };
+		F141C1EE2062650D007FFB71 /* DiyCodeTopicReplyApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicReplyApiManager.m; sourceTree = "<group>"; };
+		F141C1EF2062650D007FFB71 /* DiyCodeTopicDetialApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicDetialApiManager.h; sourceTree = "<group>"; };
+		F141C1F12062650D007FFB71 /* DiyCodeTopicDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicDetailViewController.m; sourceTree = "<group>"; };
+		F141C1F22062650D007FFB71 /* DiyCodeTopicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicsViewController.m; sourceTree = "<group>"; };
+		F141C1F32062650D007FFB71 /* DiyCodeTopicDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicDetailViewController.h; sourceTree = "<group>"; };
+		F141C1F42062650D007FFB71 /* DiyCodeTopicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicsViewController.h; sourceTree = "<group>"; };
+		F141C1F62062650D007FFB71 /* DiyCodeTopicDetailWebCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicDetailWebCell.h; sourceTree = "<group>"; };
+		F141C1F72062650D007FFB71 /* DiyCodeTopicTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicTitleCell.h; sourceTree = "<group>"; };
+		F141C1F82062650D007FFB71 /* DiyCodeTopicsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicsCell.h; sourceTree = "<group>"; };
+		F141C1F92062650D007FFB71 /* DiyCodeTopicReplyCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicReplyCellTableViewCell.m; sourceTree = "<group>"; };
+		F141C1FA2062650D007FFB71 /* DiyCodeTopicsCellTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicsCellTopView.h; sourceTree = "<group>"; };
+		F141C1FB2062650D007FFB71 /* DiyCodeTopicTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicTitleCell.m; sourceTree = "<group>"; };
+		F141C1FC2062650D007FFB71 /* DiyCodeTopicDetailWebCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicDetailWebCell.m; sourceTree = "<group>"; };
+		F141C1FD2062650D007FFB71 /* DiyCodeTopicsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicsCell.m; sourceTree = "<group>"; };
+		F141C1FE2062650D007FFB71 /* DiyCodeTopicsCellTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiyCodeTopicsCellTopView.m; sourceTree = "<group>"; };
+		F141C1FF2062650D007FFB71 /* DiyCodeTopicReplyCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicReplyCellTableViewCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F11C5AC4205B54BB0099A490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6808A60B44E774596A743D84 /* libPods-DiyCode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEBB5C022E1B547E73B2C488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86F0756B55562B7665527D94 /* Pods-DiyCode.debug.xcconfig */,
+				87290C8E3B900A597841B299 /* Pods-DiyCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F11C5ABE205B54BB0099A490 = {
+			isa = PBXGroup;
+			children = (
+				F141C1AB206262E7007FFB71 /* SLSlideMenu */,
+				F11C5AC9205B54BB0099A490 /* DiyCode */,
+				F11C5AC8205B54BB0099A490 /* Products */,
+				AEBB5C022E1B547E73B2C488 /* Pods */,
+				FDFD27F4B99225D91B9DF82B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F11C5AC8205B54BB0099A490 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F11C5AC7205B54BB0099A490 /* DiyCode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F11C5AC9205B54BB0099A490 /* DiyCode */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1B22062650D007FFB71 /* DiyCode */,
+				F11C5ACA205B54BB0099A490 /* AppDelegate.h */,
+				F11C5ACB205B54BB0099A490 /* AppDelegate.m */,
+				F11C5ACD205B54BB0099A490 /* ViewController.h */,
+				F11C5ACE205B54BB0099A490 /* ViewController.m */,
+				F11C5AD0205B54BB0099A490 /* Main.storyboard */,
+				F11C5AD3205B54BB0099A490 /* Assets.xcassets */,
+				F11C5AD5205B54BB0099A490 /* LaunchScreen.storyboard */,
+				F11C5AD8205B54BB0099A490 /* Info.plist */,
+				F11C5AD9205B54BB0099A490 /* main.m */,
+			);
+			path = DiyCode;
+			sourceTree = "<group>";
+		};
+		F141C1AB206262E7007FFB71 /* SLSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1AC206262E7007FFB71 /* SLSlideMenu.h */,
+				F141C1AD206262E7007FFB71 /* SLScreenEdgePanGestureRecognizer.h */,
+				F141C1AE206262E7007FFB71 /* SLSlideMenu.m */,
+				F141C1AF206262E7007FFB71 /* SLScreenEdgePanGestureRecognizer.m */,
+			);
+			path = SLSlideMenu;
+			sourceTree = "<group>";
+		};
+		F141C1B22062650D007FFB71 /* DiyCode */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1B32062650D007FFB71 /* Home(主页) */,
+				F141C1B92062650D007FFB71 /* DiyCodeDefines */,
+				F141C1BB2062650D007FFB71 /* Sites */,
+				F141C1C92062650D007FFB71 /* News */,
+				F141C1D02062650D007FFB71 /* Service */,
+				F141C1D82062650D007FFB71 /* Resource */,
+				F141C1DC2062650D007FFB71 /* Login */,
+				F141C1E82062650D007FFB71 /* Topics */,
+			);
+			path = DiyCode;
+			sourceTree = "<group>";
+		};
+		F141C1B32062650D007FFB71 /* Home(主页) */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1B42062650D007FFB71 /* Service */,
+				F141C1B52062650D007FFB71 /* ViewController */,
+				F141C1B82062650D007FFB71 /* ApiManger */,
+			);
+			path = "Home(主页)";
+			sourceTree = "<group>";
+		};
+		F141C1B42062650D007FFB71 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F141C1B52062650D007FFB71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1B62062650D007FFB71 /* DiyCodeHomeViewController.h */,
+				F141C1B72062650D007FFB71 /* DiyCodeHomeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F141C1B82062650D007FFB71 /* ApiManger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApiManger;
+			sourceTree = "<group>";
+		};
+		F141C1B92062650D007FFB71 /* DiyCodeDefines */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1BA2062650D007FFB71 /* DiyCodeDefines.h */,
+			);
+			path = DiyCodeDefines;
+			sourceTree = "<group>";
+		};
+		F141C1BB2062650D007FFB71 /* Sites */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1BC2062650D007FFB71 /* ApiManager */,
+				F141C1BF2062650D007FFB71 /* View */,
+				F141C1C42062650D007FFB71 /* ViewController */,
+			);
+			path = Sites;
+			sourceTree = "<group>";
+		};
+		F141C1BC2062650D007FFB71 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1BD2062650D007FFB71 /* DiyCodeSitesApiManager.m */,
+				F141C1BE2062650D007FFB71 /* DiyCodeSitesApiManager.h */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		F141C1BF2062650D007FFB71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1C02062650D007FFB71 /* DiyCodeSitesCollectionViewCell.h */,
+				F141C1C12062650D007FFB71 /* DiyCodeSitesCollectionHeaderView.m */,
+				F141C1C22062650D007FFB71 /* DiyCodeSitesCollectionViewCell.m */,
+				F141C1C32062650D007FFB71 /* DiyCodeSitesCollectionHeaderView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F141C1C42062650D007FFB71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1C52062650D007FFB71 /* DiyCodeWebViewController.m */,
+				F141C1C62062650D007FFB71 /* DiyCodeSitesViewController.h */,
+				F141C1C72062650D007FFB71 /* DiyCodeWebViewController.h */,
+				F141C1C82062650D007FFB71 /* DiyCodeSitesViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F141C1C92062650D007FFB71 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1CA2062650D007FFB71 /* ApiManager */,
+				F141C1CD2062650D007FFB71 /* ViewController */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F141C1CA2062650D007FFB71 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1CB2062650D007FFB71 /* DiyCodeNewsApiManager.h */,
+				F141C1CC2062650D007FFB71 /* DiyCodeNewsApiManager.m */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		F141C1CD2062650D007FFB71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1CE2062650D007FFB71 /* DiyCodeNewsViewController.h */,
+				F141C1CF2062650D007FFB71 /* DiyCodeNewsViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F141C1D02062650D007FFB71 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1D12062650D007FFB71 /* DiyCodeService.h */,
+				F141C1D22062650D007FFB71 /* Target_DiyCodeService.m */,
+				F141C1D32062650D007FFB71 /* AppContext */,
+				F141C1D62062650D007FFB71 /* DiyCodeService.m */,
+				F141C1D72062650D007FFB71 /* Target_DiyCodeService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F141C1D32062650D007FFB71 /* AppContext */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1D42062650D007FFB71 /* Target_CTAppContext.m */,
+				F141C1D52062650D007FFB71 /* Target_CTAppContext.h */,
+			);
+			path = AppContext;
+			sourceTree = "<group>";
+		};
+		F141C1D82062650D007FFB71 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1D92062650D007FFB71 /* js */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F141C1D92062650D007FFB71 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1DA2062650D007FFB71 /* showdown.js */,
+				F141C1DB2062650D007FFB71 /* markdown.css */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		F141C1DC2062650D007FFB71 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1DD2062650D007FFB71 /* ApiManager */,
+				F141C1E02062650D007FFB71 /* Service */,
+				F141C1E52062650D007FFB71 /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F141C1DD2062650D007FFB71 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1DE2062650D007FFB71 /* DiyCodeOauthApiManager.h */,
+				F141C1DF2062650D007FFB71 /* DiyCodeOauthApiManager.m */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		F141C1E02062650D007FFB71 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1E12062650D007FFB71 /* DiyCodeOauthService.m */,
+				F141C1E22062650D007FFB71 /* Target_DiyCodeOauthService.m */,
+				F141C1E32062650D007FFB71 /* DiyCodeOauthService.h */,
+				F141C1E42062650D007FFB71 /* Target_DiyCodeOauthService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F141C1E52062650D007FFB71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1E62062650D007FFB71 /* DiyCodeLoginViewController.h */,
+				F141C1E72062650D007FFB71 /* DiyCodeLoginViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F141C1E82062650D007FFB71 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1E92062650D007FFB71 /* ApiManager */,
+				F141C1F02062650D007FFB71 /* ViewController */,
+				F141C1F52062650D007FFB71 /* Views */,
+			);
+			path = Topics;
+			sourceTree = "<group>";
+		};
+		F141C1E92062650D007FFB71 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1EA2062650D007FFB71 /* DiyCodeTopicsApiManager.m */,
+				F141C1EB2062650D007FFB71 /* DiyCodeTopicDetialApiManager.m */,
+				F141C1EC2062650D007FFB71 /* DiyCodeTopicReplyApiManager.h */,
+				F141C1ED2062650D007FFB71 /* DiyCodeTopicsApiManager.h */,
+				F141C1EE2062650D007FFB71 /* DiyCodeTopicReplyApiManager.m */,
+				F141C1EF2062650D007FFB71 /* DiyCodeTopicDetialApiManager.h */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		F141C1F02062650D007FFB71 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1F12062650D007FFB71 /* DiyCodeTopicDetailViewController.m */,
+				F141C1F22062650D007FFB71 /* DiyCodeTopicsViewController.m */,
+				F141C1F32062650D007FFB71 /* DiyCodeTopicDetailViewController.h */,
+				F141C1F42062650D007FFB71 /* DiyCodeTopicsViewController.h */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F141C1F52062650D007FFB71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F141C1F62062650D007FFB71 /* DiyCodeTopicDetailWebCell.h */,
+				F141C1F72062650D007FFB71 /* DiyCodeTopicTitleCell.h */,
+				F141C1F82062650D007FFB71 /* DiyCodeTopicsCell.h */,
+				F141C1F92062650D007FFB71 /* DiyCodeTopicReplyCellTableViewCell.m */,
+				F141C1FA2062650D007FFB71 /* DiyCodeTopicsCellTopView.h */,
+				F141C1FB2062650D007FFB71 /* DiyCodeTopicTitleCell.m */,
+				F141C1FC2062650D007FFB71 /* DiyCodeTopicDetailWebCell.m */,
+				F141C1FD2062650D007FFB71 /* DiyCodeTopicsCell.m */,
+				F141C1FE2062650D007FFB71 /* DiyCodeTopicsCellTopView.m */,
+				F141C1FF2062650D007FFB71 /* DiyCodeTopicReplyCellTableViewCell.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDFD27F4B99225D91B9DF82B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E32E4DC17A3159A43CEA1B /* libPods-DiyCode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F11C5AC6205B54BB0099A490 /* DiyCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11C5ADD205B54BB0099A490 /* Build configuration list for PBXNativeTarget "DiyCode" */;
+			buildPhases = (
+				CB28ED5AB18E5B1BCE80DAFA /* [CP] Check Pods Manifest.lock */,
+				F11C5AC3205B54BB0099A490 /* Sources */,
+				F11C5AC4205B54BB0099A490 /* Frameworks */,
+				F11C5AC5205B54BB0099A490 /* Resources */,
+				C32E07496D675E24ECB1A755 /* [CP] Embed Pods Frameworks */,
+				1F4C6A99A108BC92D40A97A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiyCode;
+			productName = DiyCode;
+			productReference = F11C5AC7205B54BB0099A490 /* DiyCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F11C5ABF205B54BB0099A490 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = lizhao;
+				TargetAttributes = {
+					F11C5AC6205B54BB0099A490 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F11C5AC2205B54BB0099A490 /* Build configuration list for PBXProject "DiyCode" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F11C5ABE205B54BB0099A490;
+			productRefGroup = F11C5AC8205B54BB0099A490 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F11C5AC6205B54BB0099A490 /* DiyCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F11C5AC5205B54BB0099A490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11C5AD7205B54BB0099A490 /* LaunchScreen.storyboard in Resources */,
+				F11C5AD4205B54BB0099A490 /* Assets.xcassets in Resources */,
+				F11C5AD2205B54BB0099A490 /* Main.storyboard in Resources */,
+				F141C20B2062650D007FFB71 /* showdown.js in Resources */,
+				F141C20C2062650D007FFB71 /* markdown.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F4C6A99A108BC92D40A97A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DiyCode/Pods-DiyCode-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiyCode/Pods-DiyCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C32E07496D675E24ECB1A755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiyCode/Pods-DiyCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB28ED5AB18E5B1BCE80DAFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiyCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F11C5AC3205B54BB0099A490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11C5ACF205B54BB0099A490 /* ViewController.m in Sources */,
+				F141C2002062650D007FFB71 /* DiyCodeHomeViewController.m in Sources */,
+				F141C1B0206262E7007FFB71 /* SLSlideMenu.m in Sources */,
+				F141C20F2062650D007FFB71 /* Target_DiyCodeOauthService.m in Sources */,
+				F141C2042062650D007FFB71 /* DiyCodeWebViewController.m in Sources */,
+				F141C2122062650D007FFB71 /* DiyCodeTopicDetialApiManager.m in Sources */,
+				F141C2132062650D007FFB71 /* DiyCodeTopicReplyApiManager.m in Sources */,
+				F141C2072062650D007FFB71 /* DiyCodeNewsViewController.m in Sources */,
+				F141C2172062650D007FFB71 /* DiyCodeTopicTitleCell.m in Sources */,
+				F141C2162062650D007FFB71 /* DiyCodeTopicReplyCellTableViewCell.m in Sources */,
+				F141C2152062650D007FFB71 /* DiyCodeTopicsViewController.m in Sources */,
+				F141C1B1206262E7007FFB71 /* SLScreenEdgePanGestureRecognizer.m in Sources */,
+				F141C2092062650D007FFB71 /* Target_CTAppContext.m in Sources */,
+				F141C2062062650D007FFB71 /* DiyCodeNewsApiManager.m in Sources */,
+				F141C2142062650D007FFB71 /* DiyCodeTopicDetailViewController.m in Sources */,
+				F141C2182062650D007FFB71 /* DiyCodeTopicDetailWebCell.m in Sources */,
+				F11C5ADA205B54BB0099A490 /* main.m in Sources */,
+				F141C20E2062650D007FFB71 /* DiyCodeOauthService.m in Sources */,
+				F141C2112062650D007FFB71 /* DiyCodeTopicsApiManager.m in Sources */,
+				F141C20D2062650D007FFB71 /* DiyCodeOauthApiManager.m in Sources */,
+				F141C2082062650D007FFB71 /* Target_DiyCodeService.m in Sources */,
+				F141C2032062650D007FFB71 /* DiyCodeSitesCollectionViewCell.m in Sources */,
+				F141C21A2062650D007FFB71 /* DiyCodeTopicsCellTopView.m in Sources */,
+				F141C2012062650D007FFB71 /* DiyCodeSitesApiManager.m in Sources */,
+				F141C2022062650D007FFB71 /* DiyCodeSitesCollectionHeaderView.m in Sources */,
+				F141C2102062650D007FFB71 /* DiyCodeLoginViewController.m in Sources */,
+				F141C20A2062650D007FFB71 /* DiyCodeService.m in Sources */,
+				F141C2052062650D007FFB71 /* DiyCodeSitesViewController.m in Sources */,
+				F11C5ACC205B54BB0099A490 /* AppDelegate.m in Sources */,
+				F141C2192062650D007FFB71 /* DiyCodeTopicsCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F11C5AD0205B54BB0099A490 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F11C5AD1205B54BB0099A490 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F11C5AD5205B54BB0099A490 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F11C5AD6205B54BB0099A490 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F11C5ADB205B54BB0099A490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F11C5ADC205B54BB0099A490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F11C5ADE205B54BB0099A490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F0756B55562B7665527D94 /* Pods-DiyCode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9J6W9WYPXV;
+				INFOPLIST_FILE = DiyCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhao.DiyCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F11C5ADF205B54BB0099A490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87290C8E3B900A597841B299 /* Pods-DiyCode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9J6W9WYPXV;
+				INFOPLIST_FILE = DiyCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lizhao.DiyCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F11C5AC2205B54BB0099A490 /* Build configuration list for PBXProject "DiyCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11C5ADB205B54BB0099A490 /* Debug */,
+				F11C5ADC205B54BB0099A490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11C5ADD205B54BB0099A490 /* Build configuration list for PBXNativeTarget "DiyCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11C5ADE205B54BB0099A490 /* Debug */,
+				F11C5ADF205B54BB0099A490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F11C5ABF205B54BB0099A490 /* Project object */;
+}
