@@ -14,10 +14,13 @@
 #import "DiyCodeNewsViewController.h"
 #import "DiyCodeSitesViewController.h"
 #import <ChameleonFramework/Chameleon.h>
+#import "SLSlideMenu.h"
+
 @interface DiyCodeHomeViewController () <   TYPagerControllerDelegate,
                                             TYPagerControllerDataSource,
                                             TYTabPagerBarDelegate,
-                                            TYTabPagerBarDataSource
+                                            TYTabPagerBarDataSource,
+                                            SLSlideMenuProtocol
                                         >
 @property (nonatomic, strong) TYPagerController *pageController;
 @property (nonatomic, strong) TYTabPagerBar *tabPagerBar;
@@ -29,9 +32,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"DiyCode";
+    [self addLeftMenu];
     [self addPageController];
     [self addTabPagerBar];
-//    [self setupLayout];
     [self setupMenuDatas];
     [self reloadData];
 }
@@ -43,6 +47,10 @@
 
 
 #pragma mark - methods
+- (void)addLeftMenu {
+    [SLSlideMenu prepareSlideMenuWithFrame:self.view.frame delegate:self direction:SLSlideMenuSwipeDirectionLeft slideOffset:300 allowSlideMenuSwipeShow:YES allowSwipeCloseMenu:YES aboveNav:YES identifier:@"swipeLeft" object:nil];
+}
+
 - (void)addPageController {
     [self addChildViewController:self.pageController];
     [self.view addSubview:self.pageController.view];
@@ -63,12 +71,17 @@
 }
 
 - (void)setupMenuDatas {
-    self.menuDatas = @[@"News",@"Topics",@"Sites",@"Projects"];
+    self.menuDatas = @[@"Topics",@"News",@"Sites"];
 }
 
 - (void) reloadData {
     [self.pageController reloadData];
     [self.tabPagerBar reloadData];
+}
+
+#pragma mark - SLSlideMenuProtocol
+- (void)slideMenu:(SLSlideMenu *)slideMenu prepareSubviewsForMenuView:(UIView *)menuView {
+
 }
 
 #pragma mark - TYPagerControllerDataSource
@@ -141,6 +154,9 @@
         _tabPagerBar.dataSource = self;
         _tabPagerBar.backgroundColor = [UIColor flatSkyBlueColor];
         _tabPagerBar.layout.barStyle = TYPagerBarStyleProgressElasticView;
+        _tabPagerBar.layout.cellWidth = SCREEN_WIDTH / 3;
+        _tabPagerBar.layout.cellSpacing = 0;
+        _tabPagerBar.layout.cellEdging = 0;
         [_tabPagerBar registerClass:[TYTabPagerBarCell class] forCellWithReuseIdentifier:[TYTabPagerBarCell cellIdentifier]];
     }
     return _tabPagerBar;
