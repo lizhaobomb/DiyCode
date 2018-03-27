@@ -28,12 +28,25 @@
     [self.view addSubview:self.passwordField];
     [self.view addSubview:self.loginButton];
     
+    [self setupNavigationBar];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
     [self setupLayout];
+}
+
+- (void)setupNavigationBar {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
+}
+
+- (void)cancel {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)setupLayout {
     self.usernameField.ct_x = 20;
-    self.usernameField.ct_y = 30;
+    self.usernameField.ct_y = self.navigationController.navigationBar.ct_bottom + 10;
     self.usernameField.ct_width = SCREEN_WIDTH - 40;
     self.usernameField.ct_height = 50;
     
@@ -80,8 +93,8 @@
              @"client_id":@"3a908f0f",
              @"client_secret":@"5f52a3cb22d1b0e8e7e0d5df5b833d0ab74acdc7103b2aefe30a46a1722eeb87",
              @"grant_type":@"password",
-             @"password":@"woshilizhao123",
-             @"username":@"827210217"
+             @"password":self.passwordField.text,
+             @"username":self.usernameField.text
              };
 }
 

@@ -15,6 +15,7 @@
 #import "DiyCodeSitesViewController.h"
 #import <ChameleonFramework/Chameleon.h>
 #import "SLSlideMenu.h"
+#import "DiyCodeMineViewController.h"
 
 @interface DiyCodeHomeViewController () <   TYPagerControllerDelegate,
                                             TYPagerControllerDataSource,
@@ -25,6 +26,7 @@
 @property (nonatomic, strong) TYPagerController *pageController;
 @property (nonatomic, strong) TYTabPagerBar *tabPagerBar;
 @property (nonatomic, strong) NSArray *menuDatas;
+@property (nonatomic, strong) DiyCodeMineViewController *mineVC;
 @end
 
 @implementation DiyCodeHomeViewController
@@ -81,7 +83,10 @@
 
 #pragma mark - SLSlideMenuProtocol
 - (void)slideMenu:(SLSlideMenu *)slideMenu prepareSubviewsForMenuView:(UIView *)menuView {
-
+    DiyCodeMineViewController *mineVC = [[DiyCodeMineViewController alloc] init];
+    _mineVC = mineVC;
+    [menuView addSubview:mineVC.view];
+    mineVC.view.frame = menuView.bounds;
 }
 
 #pragma mark - TYPagerControllerDataSource

@@ -42,6 +42,9 @@
 		F141C2192062650D007FFB71 /* DiyCodeTopicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1FD2062650D007FFB71 /* DiyCodeTopicsCell.m */; };
 		F141C21A2062650D007FFB71 /* DiyCodeTopicsCellTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F141C1FE2062650D007FFB71 /* DiyCodeTopicsCellTopView.m */; };
 		F141E42B2064D1EC007A19CE /* DiyCodeMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F141E42A2064D1EC007A19CE /* DiyCodeMineViewController.m */; };
+		F141E4322069D963007A19CE /* DiyCodeMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F141E4312069D963007A19CE /* DiyCodeMineHeaderView.m */; };
+		F141E437206A392B007A19CE /* NSObject+TopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F141E436206A392B007A19CE /* NSObject+TopVC.m */; };
+		F141E43A206A46FE007A19CE /* DiyCodeMeApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F141E439206A46FE007A19CE /* DiyCodeMeApiManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +117,12 @@
 		F141C1FF2062650D007FFB71 /* DiyCodeTopicReplyCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiyCodeTopicReplyCellTableViewCell.h; sourceTree = "<group>"; };
 		F141E4292064D1EC007A19CE /* DiyCodeMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiyCodeMineViewController.h; sourceTree = "<group>"; };
 		F141E42A2064D1EC007A19CE /* DiyCodeMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiyCodeMineViewController.m; sourceTree = "<group>"; };
+		F141E4302069D963007A19CE /* DiyCodeMineHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiyCodeMineHeaderView.h; sourceTree = "<group>"; };
+		F141E4312069D963007A19CE /* DiyCodeMineHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiyCodeMineHeaderView.m; sourceTree = "<group>"; };
+		F141E435206A392B007A19CE /* NSObject+TopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TopVC.h"; sourceTree = "<group>"; };
+		F141E436206A392B007A19CE /* NSObject+TopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TopVC.m"; sourceTree = "<group>"; };
+		F141E438206A46FE007A19CE /* DiyCodeMeApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiyCodeMeApiManager.h; sourceTree = "<group>"; };
+		F141E439206A46FE007A19CE /* DiyCodeMeApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiyCodeMeApiManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +168,7 @@
 		F11C5AC9205B54BB0099A490 /* DiyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F141E433206A38FD007A19CE /* Category */,
 				F141C1B22062650D007FFB71 /* DiyCode */,
 				F11C5ACA205B54BB0099A490 /* AppDelegate.h */,
 				F11C5ACB205B54BB0099A490 /* AppDelegate.m */,
@@ -437,6 +447,7 @@
 		F141E4262064D148007A19CE /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F141E42F2069D944007A19CE /* View */,
 				F141E4272064D148007A19CE /* ApiManager */,
 				F141E4282064D148007A19CE /* ViewController */,
 			);
@@ -446,6 +457,8 @@
 		F141E4272064D148007A19CE /* ApiManager */ = {
 			isa = PBXGroup;
 			children = (
+				F141E438206A46FE007A19CE /* DiyCodeMeApiManager.h */,
+				F141E439206A46FE007A19CE /* DiyCodeMeApiManager.m */,
 			);
 			path = ApiManager;
 			sourceTree = "<group>";
@@ -457,6 +470,32 @@
 				F141E42A2064D1EC007A19CE /* DiyCodeMineViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F141E42F2069D944007A19CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F141E4302069D963007A19CE /* DiyCodeMineHeaderView.h */,
+				F141E4312069D963007A19CE /* DiyCodeMineHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F141E433206A38FD007A19CE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F141E434206A38FD007A19CE /* NSObject */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F141E434206A38FD007A19CE /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				F141E435206A392B007A19CE /* NSObject+TopVC.h */,
+				F141E436206A392B007A19CE /* NSObject+TopVC.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 		FDFD27F4B99225D91B9DF82B /* Frameworks */ = {
@@ -610,6 +649,7 @@
 				F141C2092062650D007FFB71 /* Target_CTAppContext.m in Sources */,
 				F141C2062062650D007FFB71 /* DiyCodeNewsApiManager.m in Sources */,
 				F141C2142062650D007FFB71 /* DiyCodeTopicDetailViewController.m in Sources */,
+				F141E4322069D963007A19CE /* DiyCodeMineHeaderView.m in Sources */,
 				F141C2182062650D007FFB71 /* DiyCodeTopicDetailWebCell.m in Sources */,
 				F11C5ADA205B54BB0099A490 /* main.m in Sources */,
 				F141C20E2062650D007FFB71 /* DiyCodeOauthService.m in Sources */,
@@ -621,6 +661,8 @@
 				F141C2012062650D007FFB71 /* DiyCodeSitesApiManager.m in Sources */,
 				F141C2022062650D007FFB71 /* DiyCodeSitesCollectionHeaderView.m in Sources */,
 				F141C2102062650D007FFB71 /* DiyCodeLoginViewController.m in Sources */,
+				F141E43A206A46FE007A19CE /* DiyCodeMeApiManager.m in Sources */,
+				F141E437206A392B007A19CE /* NSObject+TopVC.m in Sources */,
 				F141C20A2062650D007FFB71 /* DiyCodeService.m in Sources */,
 				F141C2052062650D007FFB71 /* DiyCodeSitesViewController.m in Sources */,
 				F11C5ACC205B54BB0099A490 /* AppDelegate.m in Sources */,
