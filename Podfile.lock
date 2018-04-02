@@ -27,6 +27,7 @@ PODS:
     - SDWebImage/Core (= 4.3.2)
   - SDWebImage/Core (4.3.2)
   - TYPagerController (2.1.2)
+  - WeexSDK (0.18.0)
 
 DEPENDENCIES:
   - ChameleonFramework
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDWebImage
   - TYPagerController
+  - WeexSDK
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
@@ -45,7 +47,8 @@ SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
   TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
+  WeexSDK: ac56f255ce9a48e93ebc2e003956ab20da33321d
 
-PODFILE CHECKSUM: 47552a5ea7bb137254b5333cd86601df8268d5fa
+PODFILE CHECKSUM: 4219db334346a629faae3e29495264fdd9e1bc6a
 
 COCOAPODS: 1.4.0

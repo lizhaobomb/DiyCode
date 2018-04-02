@@ -7,6 +7,8 @@
 //
 
 #import "DiyCodeService.h"
+#import "NSUserDefaults+User.h"
+
 #import <CTMediator/CTMediator.h>
 #import <AFNetworking/AFNetworking.h>
 
@@ -48,6 +50,10 @@ NSString * const ServiceIdentifierDiyCode = @"DiyCodeService";
     if (!_httpRequestSerializer) {
         _httpRequestSerializer = [AFHTTPRequestSerializer serializer];
         [_httpRequestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    }
+    NSString *token = [[NSUserDefaults userTokenInfo] valueForKey:@"access_token"];
+    if (token) {
+        [_httpRequestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",token] forHTTPHeaderField:@"Authorization"];
     }
     return _httpRequestSerializer;
 }

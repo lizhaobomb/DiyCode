@@ -10,4 +10,6 @@
 
 @interface DiyCodeMineHeaderView : UIView
 
+@property (nonatomic,strong) NSDictionary *userInfo;
+
 @end

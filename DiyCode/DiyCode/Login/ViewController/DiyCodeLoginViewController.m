@@ -10,6 +10,7 @@
 #import <HandyFrame/UIView+LayoutMethods.h>
 #import <ChameleonFramework/Chameleon.h>
 #import "DiyCodeOauthApiManager.h"
+#import "NSUserDefaults+User.h"
 
 @interface DiyCodeLoginViewController () <CTAPIManagerCallBackDelegate, CTAPIManagerParamSource>
 @property (nonatomic, strong) UITextField *usernameField;
@@ -71,15 +72,10 @@
     [self.oauthApiManager loadData];
 }
 
-- (void)saveToken:(NSDictionary *)obj {
-    [[NSUserDefaults standardUserDefaults] setObject:obj forKey:@"User"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
 #pragma mark - CTAPIManagerCallBackDelegate
 - (void)managerCallAPIDidSuccess:(CTAPIBaseManager * _Nonnull)manager {
     if (manager == self.oauthApiManager) {
-        [self saveToken:manager.response.content];
+        [NSUserDefaults saveUserTokenInfo:manager.response.content];
         [self dismissViewControllerAnimated:YES completion:nil];
     }
 }

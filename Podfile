@@ -11,5 +11,5 @@ pod 'ChameleonFramework'
 pod 'HandyFrame'
 pod 'MJRefresh'
 pod 'SDWebImage'
-
+pod 'WeexSDK'
 end

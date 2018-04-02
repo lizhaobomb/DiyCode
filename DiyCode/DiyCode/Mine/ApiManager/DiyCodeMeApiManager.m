@@ -14,6 +14,13 @@
 
 @implementation DiyCodeMeApiManager
 
+- (instancetype)init {
+    if (self = [super init]) {
+        self.validator = self;
+    }
+    return self;
+}
+
 - (NSString *)methodName {
     return @"users/me.json";
 }

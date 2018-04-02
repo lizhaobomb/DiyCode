@@ -45,6 +45,11 @@
 		F141E4322069D963007A19CE /* DiyCodeMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F141E4312069D963007A19CE /* DiyCodeMineHeaderView.m */; };
 		F141E437206A392B007A19CE /* NSObject+TopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F141E436206A392B007A19CE /* NSObject+TopVC.m */; };
 		F141E43A206A46FE007A19CE /* DiyCodeMeApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F141E439206A46FE007A19CE /* DiyCodeMeApiManager.m */; };
+		F141E43D206B38DD007A19CE /* NSUserDefaults+User.m in Sources */ = {isa = PBXBuildFile; fileRef = F141E43C206B38DD007A19CE /* NSUserDefaults+User.m */; };
+		F19D947520720D45007618BD /* AppDelegate+Weex.m in Sources */ = {isa = PBXBuildFile; fileRef = F19D947420720D45007618BD /* AppDelegate+Weex.m */; };
+		F19D947B2072128A007618BD /* DiyCodeWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19D947A2072128A007618BD /* DiyCodeWeexViewController.m */; };
+		F19D947E207215BB007618BD /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = F19D947D207215BB007618BD /* main.js */; };
+		F19D948120722AB1007618BD /* LZImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F19D948020722AB1007618BD /* LZImageLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +128,15 @@
 		F141E436206A392B007A19CE /* NSObject+TopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TopVC.m"; sourceTree = "<group>"; };
 		F141E438206A46FE007A19CE /* DiyCodeMeApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiyCodeMeApiManager.h; sourceTree = "<group>"; };
 		F141E439206A46FE007A19CE /* DiyCodeMeApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiyCodeMeApiManager.m; sourceTree = "<group>"; };
+		F141E43B206B38DD007A19CE /* NSUserDefaults+User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+User.h"; sourceTree = "<group>"; };
+		F141E43C206B38DD007A19CE /* NSUserDefaults+User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+User.m"; sourceTree = "<group>"; };
+		F19D947320720D45007618BD /* AppDelegate+Weex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Weex.h"; sourceTree = "<group>"; };
+		F19D947420720D45007618BD /* AppDelegate+Weex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Weex.m"; sourceTree = "<group>"; };
+		F19D94792072128A007618BD /* DiyCodeWeexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiyCodeWeexViewController.h; sourceTree = "<group>"; };
+		F19D947A2072128A007618BD /* DiyCodeWeexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiyCodeWeexViewController.m; sourceTree = "<group>"; };
+		F19D947D207215BB007618BD /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		F19D947F20722AB1007618BD /* LZImageLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZImageLoader.h; sourceTree = "<group>"; };
+		F19D948020722AB1007618BD /* LZImageLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZImageLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +190,8 @@
 				F11C5AD5205B54BB0099A490 /* LaunchScreen.storyboard */,
 				F11C5AD8205B54BB0099A490 /* Info.plist */,
 				F11C5AD9205B54BB0099A490 /* main.m */,
+				F19D947320720D45007618BD /* AppDelegate+Weex.h */,
+				F19D947420720D45007618BD /* AppDelegate+Weex.m */,
 			);
 			path = DiyCode;
 			sourceTree = "<group>";
@@ -194,6 +210,7 @@
 		F141C1B22062650D007FFB71 /* DiyCode */ = {
 			isa = PBXGroup;
 			children = (
+				F19D94772072125D007618BD /* Weex */,
 				F141E4262064D148007A19CE /* Mine */,
 				F141C1B32062650D007FFB71 /* Home(主页) */,
 				F141C1B92062650D007FFB71 /* DiyCodeDefines */,
@@ -340,6 +357,7 @@
 		F141C1D82062650D007FFB71 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F19D947C2072159F007618BD /* weex */,
 				F141C1D92062650D007FFB71 /* js */,
 			);
 			path = Resource;
@@ -494,8 +512,37 @@
 			children = (
 				F141E435206A392B007A19CE /* NSObject+TopVC.h */,
 				F141E436206A392B007A19CE /* NSObject+TopVC.m */,
+				F141E43B206B38DD007A19CE /* NSUserDefaults+User.h */,
+				F141E43C206B38DD007A19CE /* NSUserDefaults+User.m */,
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		F19D94772072125D007618BD /* Weex */ = {
+			isa = PBXGroup;
+			children = (
+				F19D94782072125D007618BD /* Controller */,
+			);
+			path = Weex;
+			sourceTree = "<group>";
+		};
+		F19D94782072125D007618BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F19D94792072128A007618BD /* DiyCodeWeexViewController.h */,
+				F19D947A2072128A007618BD /* DiyCodeWeexViewController.m */,
+				F19D947F20722AB1007618BD /* LZImageLoader.h */,
+				F19D948020722AB1007618BD /* LZImageLoader.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F19D947C2072159F007618BD /* weex */ = {
+			isa = PBXGroup;
+			children = (
+				F19D947D207215BB007618BD /* main.js */,
+			);
+			path = weex;
 			sourceTree = "<group>";
 		};
 		FDFD27F4B99225D91B9DF82B /* Frameworks */ = {
@@ -571,6 +618,7 @@
 				F11C5AD4205B54BB0099A490 /* Assets.xcassets in Resources */,
 				F141C20B2062650D007FFB71 /* showdown.js in Resources */,
 				F141C20C2062650D007FFB71 /* markdown.css in Resources */,
+				F19D947E207215BB007618BD /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,10 +633,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DiyCode/Pods-DiyCode-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
+				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/native-bundle-main.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -638,6 +690,7 @@
 				F141C2002062650D007FFB71 /* DiyCodeHomeViewController.m in Sources */,
 				F141C1B0206262E7007FFB71 /* SLSlideMenu.m in Sources */,
 				F141C20F2062650D007FFB71 /* Target_DiyCodeOauthService.m in Sources */,
+				F19D948120722AB1007618BD /* LZImageLoader.m in Sources */,
 				F141C2042062650D007FFB71 /* DiyCodeWebViewController.m in Sources */,
 				F141C2122062650D007FFB71 /* DiyCodeTopicDetialApiManager.m in Sources */,
 				F141C2132062650D007FFB71 /* DiyCodeTopicReplyApiManager.m in Sources */,
@@ -649,8 +702,10 @@
 				F141C2092062650D007FFB71 /* Target_CTAppContext.m in Sources */,
 				F141C2062062650D007FFB71 /* DiyCodeNewsApiManager.m in Sources */,
 				F141C2142062650D007FFB71 /* DiyCodeTopicDetailViewController.m in Sources */,
+				F19D947520720D45007618BD /* AppDelegate+Weex.m in Sources */,
 				F141E4322069D963007A19CE /* DiyCodeMineHeaderView.m in Sources */,
 				F141C2182062650D007FFB71 /* DiyCodeTopicDetailWebCell.m in Sources */,
+				F141E43D206B38DD007A19CE /* NSUserDefaults+User.m in Sources */,
 				F11C5ADA205B54BB0099A490 /* main.m in Sources */,
 				F141C20E2062650D007FFB71 /* DiyCodeOauthService.m in Sources */,
 				F141C2112062650D007FFB71 /* DiyCodeTopicsApiManager.m in Sources */,
@@ -660,6 +715,7 @@
 				F141C21A2062650D007FFB71 /* DiyCodeTopicsCellTopView.m in Sources */,
 				F141C2012062650D007FFB71 /* DiyCodeSitesApiManager.m in Sources */,
 				F141C2022062650D007FFB71 /* DiyCodeSitesCollectionHeaderView.m in Sources */,
+				F19D947B2072128A007618BD /* DiyCodeWeexViewController.m in Sources */,
 				F141C2102062650D007FFB71 /* DiyCodeLoginViewController.m in Sources */,
 				F141E43A206A46FE007A19CE /* DiyCodeMeApiManager.m in Sources */,
 				F141E437206A392B007A19CE /* NSObject+TopVC.m in Sources */,

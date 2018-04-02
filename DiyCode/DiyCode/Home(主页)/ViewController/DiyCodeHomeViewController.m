@@ -16,6 +16,7 @@
 #import <ChameleonFramework/Chameleon.h>
 #import "SLSlideMenu.h"
 #import "DiyCodeMineViewController.h"
+#import "DiyCodeWeexViewController.h"
 
 @interface DiyCodeHomeViewController () <   TYPagerControllerDelegate,
                                             TYPagerControllerDataSource,
@@ -73,7 +74,7 @@
 }
 
 - (void)setupMenuDatas {
-    self.menuDatas = @[@"Topics",@"News",@"Sites"];
+    self.menuDatas = @[@"Topics",@"News",@"Sites",@"Weex"];
 }
 
 - (void) reloadData {
@@ -104,6 +105,9 @@
     }
     if ([title isEqualToString:@"Sites"]) {
         return [[DiyCodeSitesViewController alloc] init];
+    }
+    if ([title isEqualToString:@"Weex"]) {
+        return [[DiyCodeWeexViewController alloc] init];
     }
     return [[UIViewController alloc] init];
 }
@@ -142,7 +146,7 @@
 - (TYPagerController *)pageController {
     if (!_pageController) {
         _pageController = [[TYPagerController alloc] init];
-        _pageController.view.backgroundColor = [UIColor blueColor];
+//        _pageController.view.backgroundColor = [UIColor blueColor];
         _pageController.layout.prefetchItemCount = 1;
         // 只有当scroll滚动动画停止时才加载pagerview，用于优化滚动时性能
         _pageController.layout.addVisibleItemOnlyWhenScrollAnimatedEnd = YES;

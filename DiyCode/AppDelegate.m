@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DiyCodeHomeViewController.h"
-
+#import "AppDelegate+Weex.h"
 @interface AppDelegate ()
 
 @end
@@ -21,6 +21,7 @@
     DiyCodeHomeViewController *homeVC = [[DiyCodeHomeViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:homeVC];
     self.window.rootViewController = navi;
+    [self initWeexSDK];
     [self.window makeKeyAndVisible];
     return YES;
 }
